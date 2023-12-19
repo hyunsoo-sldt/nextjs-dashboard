@@ -25,7 +25,7 @@ const FormSchema = z.object({
 const CreateInvoice = FormSchema.omit({ id: true, date: true });
 
 export type State = {
-  error?: {
+  errors?: {
     customerId?: string[];
     amount?: string[];
     status?: string[];
